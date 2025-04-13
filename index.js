@@ -336,33 +336,22 @@ class UbuntexIndex {
         const question = this.questions[this.currentIndex]
         questionContainer.textContent = `Question ${this.currentIndex + 1}: ${question.text}`
         optionsContainer.innerHTML = ""
-        
-        // Object.entries(question.choices).forEach(([key, value]) => {
-        //     const button = document.createElement("button")
-        //     button.textContent = `${key}: ${value[0]}`
-        //     button.classList.add("option-button")
-        //     button.onclick = () => {
-        //         this.userAnswers.push(value[1])
-        //         console.log(this.userAnswers)
-        //         nextBtn.disabled = false
-        //     }
-        //     optionsContainer.appendChild(button)
-        // })
+    
 
         this.currentSelectedAnswer = null;
 
-    Object.entries(question.choices).forEach(([key, value]) => {
-        const button = document.createElement("button")
-        button.textContent = `${key}: ${value[0]}`
-        button.classList.add("option-button");
-        button.onclick = () => {
-            // Store the selected answer temporarily (don't push to array yet)
-            this.currentSelectedAnswer = value[1]
-            console.log("Selected:", this.currentSelectedAnswer)
-            nextBtn.disabled = false;
-        }
-        optionsContainer.appendChild(button);
-    }) 
+        Object.entries(question.choices).forEach(([key, value]) => {
+            const button = document.createElement("button")
+            button.textContent = `${key}: ${value[0]}`
+            button.classList.add("option-button");
+            button.onclick = () => {
+                // Store the selected answer temporarily (don't push to array yet)
+                this.currentSelectedAnswer = value[1]
+                console.log("Selected:", this.currentSelectedAnswer)
+                nextBtn.disabled = false;
+            }
+            optionsContainer.appendChild(button);
+        }) 
         nextBtn.disabled = true
         nextBtn.onclick = () => {
                 // Only push to userAnswers if an answer was selected
@@ -385,6 +374,10 @@ class UbuntexIndex {
                     nextBtn.textContent = "Submit and See Results"
                 }
             }
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Adds smooth scrolling animation
+            })
         }
     }
 
