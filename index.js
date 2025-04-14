@@ -207,7 +207,23 @@ class UbuntexIndex {
                 D: ["4", 4],
                 E: ["5", 5]
             }},{
-            text: "On a 10 point scale how would you rate the importance of others?", //24
+            text: "On a 5 point scale how would you rate the importance of dignified thoughts that show respect for others?", //24
+            choices: {
+                A: ["1", 1],
+                B: ["2", 2],
+                C: ["3", 3],
+                D: ["4", 4],
+                E: ["5", 5]
+            }},{
+            text: "On a 5 point scale how would you rate the importance of your value system and beliefs?", //25
+            choices: {
+                A: ["1", 1],
+                B: ["2", 2],
+                C: ["3", 3],
+                D: ["4", 4],
+                E: ["5", 5]
+            }},{
+            text: "On a 10 point scale how would you rate the importance of others?", //26
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -220,15 +236,7 @@ class UbuntexIndex {
                 I: ["9", 9],
                 J: ["10", 10]
             }},{
-            text: "On a 5 point scale how would you rate the importance of dignified thoughts that show respect for others?", //25
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
-            text: "On a 10 point scale how would you rate the importance of dignified actions that show respect for others?", //26
+            text: "On a 10 point scale how would you rate the importance of dignified actions that show respect for others?", //27
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -241,14 +249,6 @@ class UbuntexIndex {
                 I: ["9", 9],
                 J: ["10", 10]
             }},{
-            text: "On a 5 point scale how would you rate the importance of your value system and beliefs?", //27
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-             }},{
             // Communal Responsibility (30%)
             text: "Do you consider yourself to be a responsible citizen?", //28
             choices: {
