@@ -2,8 +2,7 @@
 * {
     box-sizing: border-box;
 }
-body { 
-    /* margin: 20px; */
+body {
     font-weight: 400;
     font-style: normal;
     font-family: "Poppins", sans-serif;
@@ -31,10 +30,12 @@ button {
     font-family: inherit; 
 }
 .option-button:hover {
-    background: rgba(128, 128, 128,0.2);
+    background: rgb(128, 128, 128,0.2);
 }
 .option-button:focus {
-    background: #A9A9A9;
+    color: #ffffff;
+    font-size: larger;
+    background: rgb(54, 69, 79);
 }
 #result,
 #quiz-container {
@@ -45,7 +46,7 @@ button {
 }
 .option-button {
     text-align: left;
-    background: rgba(25,25,122,0.1);
+    background: rgba(25,25,122,0.2);
 }
 #next-btn {
     min-width: 150px;

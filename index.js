@@ -43,15 +43,7 @@ class UbuntexIndex {
                 D: ["Working with others is the only way of achieving lasting results ", 7]
             }},{
             //ratings
-            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand yourself?", //6
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
-            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your family?", //7
+            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your family?", //6
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -63,6 +55,14 @@ class UbuntexIndex {
                 H: ["8", 8],
                 I: ["9", 9],
                 J: ["10", 10]
+            }},{
+            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand yourself?", //7
+            choices: {
+                A: ["1", 1],
+                B: ["2", 2],
+                C: ["3", 3],
+                D: ["4", 4],
+                E: ["5", 5]
             }},{
             text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your community?", //8
             choices: {
@@ -77,7 +77,15 @@ class UbuntexIndex {
                 I: ["9", 9],
                 J: ["10", 10]
             }},{
-            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your country?", //9
+            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand others in the world?", //9
+            choices: {
+                A: ["1", 1],
+                B: ["2", 2],
+                C: ["3", 3],
+                D: ["4", 4],
+                E: ["5", 5]
+            }},{
+            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your country?", //10
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -89,14 +97,6 @@ class UbuntexIndex {
                 H: ["8", 8],
                 I: ["9", 9],
                 J: ["10", 10]
-            }},{
-            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand others in the world?", //10
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
             }},{
             // respect (25%)
             text: "How important is showing respect to  other human beings?", //11
@@ -124,15 +124,7 @@ class UbuntexIndex {
                 D: ["4", 4],
                 E: ["5", 5]
             }},{
-            text: "Rate on a 5 point scale your respect for your family members in general", //15
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
-            text: "Rate on a 10 point scale your respect for your community", //16
+            text: "Rate on a 10 point scale your respect for your community", //15
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -144,6 +136,14 @@ class UbuntexIndex {
                 H: ["8", 8],
                 I: ["9", 9],
                 J: ["10", 10]
+            }},{
+            text: "Rate on a 5 point scale your respect for your family members in general", //16
+            choices: {
+                A: ["1", 1],
+                B: ["2", 2],
+                C: ["3", 3],
+                D: ["4", 4],
+                E: ["5", 5]
             }},{
             text: "Rate on a 10 point scale your respect for the people in your country", //17
             choices: {
