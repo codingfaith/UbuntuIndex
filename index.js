@@ -176,10 +176,7 @@ class UbuntexIndex {
         resultContainer.style.display = "block";
         resultContainer.innerHTML = `
             <h2>Test Already Completed</h2>
-            <p>You have already completed this test on this device.</p>
-            <p>To maintain the accuracy of results, please take the test only once.</p>
-            <p>If you need to retake, please clear your browser data or use a different browser.</p>
-        `;
+            <p>You have already completed this test on this device.</p>`;
     }
 
     startQuiz() {
