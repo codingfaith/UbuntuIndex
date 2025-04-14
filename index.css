@@ -33,22 +33,22 @@ button {
     color: #000000;
     text-align: left;
     background: rgba(25,25,122,0.2);
-    -webkit-tap-highlight-color: transparent;
+    /* -webkit-tap-highlight-color: transparent; */
 }
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
     .option-button:focus {
       background: #36454F !important;
     }
-  }
+  } */
 .option-button:hover {
     background: rgba(128, 128, 128,0.2);
 }
 .option-button:focus,
 .option-button:active{
     outline: none; 
+    color: #ffffff;
     font-size: larger;
-    color: #ffffff !important;
-    background: #36454F !important;
+    background: #36454F;
 }
 #result,
 #quiz-container {

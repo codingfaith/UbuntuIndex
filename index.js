@@ -183,14 +183,14 @@ class UbuntexIndex {
             text: "What matters the most to you about how you see others in a social setting?", //20
             choices: {
                 A: ["Their appearance and presence", 1],
-                B: ["Their qualities and skills  ", 3],
+                B: ["Their qualifications and skills  ", 3],
                 C: ["Their dignity and worth as a person ", 6],
                 D: ["Their priorities and values ", 4]
             }},{
             text: "How would you describe how you want others to treat you in social settings?", //21
             choices: {
                 A: ["Based on my appearance and presence ", 1],
-                B: ["Based on my qualities and skills ", 3],
+                B: ["Based on my qualifications and skills ", 3],
                 C: ["With honour simply because I am human ", 6]
             }},{
             text: "Who in your view in any situation is responsible for doing the right thing?", //22
@@ -199,7 +199,7 @@ class UbuntexIndex {
                 B: ["Others", 2],
                 C: ["Everyone", 3]
             }},{
-            text: "On a 5 point scale how would you rate your importance?", //23
+            text: "On a 5 point scale how would you rate your importance as a human being, in general?", //23
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -299,7 +299,7 @@ class UbuntexIndex {
                 D: ["4", 4],
                 E: ["5", 5]
             }},{
-            text: "Can you  rate the importance of service to the community to you personally, on a 5 point scale?", //36
+            text: "Can you  rate the importance of service to the community to you personally, on a 10 point scale?", //36
             choices: {
                 A: ["1", 1],
                 B: ["2", 2],
@@ -376,11 +376,11 @@ class UbuntexIndex {
             optionsContainer.appendChild(button);
         }) 
         // JavaScript fallback for iOS
-        document.querySelectorAll('.option-button').forEach(button => {
-            button.addEventListener('touchstart', function() {
-              this.focus()
-            })
-          })
+        // document.querySelectorAll('.option-button').forEach(button => {
+        //     button.addEventListener('touchstart', function() {
+        //       this.focus()
+        //     })
+        //   })
 
         nextBtn.disabled = true
         nextBtn.onclick = () => {
