@@ -1,4 +1,3 @@
-
 let currentQuestion = 1
 const totalQuestions = 36
 const progress = document.getElementById("progress")
@@ -44,60 +43,15 @@ class UbuntexIndex {
             }},{
             //ratings
             text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your family?", //6
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand yourself?", //7
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your community?", //8
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand others in the world?", //9
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your country?", //10
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             // respect (25%)
             text: "How important is showing respect to  other human beings?", //11
             choices: {
@@ -105,9 +59,9 @@ class UbuntexIndex {
                 B: ["Everyone needs to be respected", 5],
                 C: ["Respect is a luxury", 1]
             }},{
-            text: "How do you feel when someone you don’t know is being disrespected?", //12
+            text: "How do you feel when someone you don't know is being disrespected?", //12
             choices: {
-                A: ["It is none of my business, I don’t care ", 1],
+                A: ["It is none of my business, I don't care ", 1],
                 B: ["I also feel disrespected ", 6],
                 C: ["I feel bad about our society", 3]
             }},{
@@ -117,68 +71,17 @@ class UbuntexIndex {
                 B: ["Not having negative thoughts about them", 3]
             }},{
             text: "Rate on a 5 point scale your respect for yourself", //14
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "Rate on a 10 point scale your respect for your community", //15
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             text: "Rate on a 5 point scale your respect for your family members in general", //16
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "Rate on a 10 point scale your respect for the people in your country", //17
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-        }},{
+            scale: 10},{
             text: "Rate on a 5 point scale your respect for people around the world", //18
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "Rate on a 10 point scale your respect authorities in general", //19
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             // Dignity (20%)
             text: "What matters the most to you about how you see others in a social setting?", //20
             choices: {
@@ -200,55 +103,15 @@ class UbuntexIndex {
                 C: ["Everyone", 3]
             }},{
             text: "On a 5 point scale how would you rate your importance as a human being, in general?", //23
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "On a 5 point scale how would you rate the importance of dignified thoughts that show respect for others?", //24
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "On a 5 point scale how would you rate the importance of your value system and beliefs?", //25
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "On a 10 point scale how would you rate the importance of others?", //26
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             text: "On a 10 point scale how would you rate the importance of dignified actions that show respect for others?", //27
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }},{
+            scale: 10},{
             // Communal Responsibility (30%)
             text: "Do you consider yourself to be a responsible citizen?", //28
             choices: {
@@ -284,34 +147,11 @@ class UbuntexIndex {
                 D: ["A religious and upright person ", 4]
             }},{
             text: "Can you  rate the importance of popularity and fame to you personally, on a 5 point scale?", //34
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "Can you  rate the importance of skill and talent to you personally, on a 5 point scale?", //35
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5]
-            }},{
+            scale: 5},{
             text: "Can you  rate the importance of service to the community to you personally, on a 10 point scale?", //36
-            choices: {
-                A: ["1", 1],
-                B: ["2", 2],
-                C: ["3", 3],
-                D: ["4", 4],
-                E: ["5", 5],
-                F: ["6", 6],
-                G: ["7", 7],
-                H: ["8", 8],
-                I: ["9", 9],
-                J: ["10", 10]
-            }}
+            scale: 10}
             
         ]
         this.currentIndex = 0
@@ -360,31 +200,67 @@ class UbuntexIndex {
         questionContainer.textContent = `Question ${this.currentIndex + 1}: ${question.text}`
         optionsContainer.innerHTML = ""
     
-
         this.currentSelectedAnswer = null;
 
-        Object.entries(question.choices).forEach(([key, value]) => {
-            const button = document.createElement("button")
-            button.textContent = `${key}: ${value[0]}`
-            button.classList.add("option-button");
-            button.onclick = () => {
-                // Store the selected answer temporarily (don't push to array yet)
-                this.currentSelectedAnswer = value[1]
-                console.log("Selected:", this.currentSelectedAnswer)
-                nextBtn.disabled = false;
+        if (question.scale) {
+            // Create slider for scale questions
+            const sliderContainer = document.createElement("div")
+            sliderContainer.className = "slider-container"
+            
+            const slider = document.createElement("input")
+            slider.type = "range"
+            slider.min = "1"
+            slider.max = question.scale.toString()
+            slider.value = Math.ceil(question.scale / 2).toString() // Default to middle value
+            slider.step = "1"
+            slider.className = "scale-slider"
+            
+            const valueDisplay = document.createElement("div")
+            valueDisplay.className = "slider-value"
+            valueDisplay.textContent = `Selected: ${slider.value} (drag slider to rate)`
+            
+            slider.oninput = () => {
+                valueDisplay.textContent = `Selected: ${slider.value}`
+                this.currentSelectedAnswer = parseInt(slider.value)
+                nextBtn.disabled = false
             }
-            optionsContainer.appendChild(button);
-        }) 
-        // JavaScript fallback for iOS
-        // document.querySelectorAll('.option-button').forEach(button => {
-        //     button.addEventListener('touchstart', function() {
-        //       this.focus()
-        //     })
-        //   })
+            
+            sliderContainer.appendChild(slider)
+            sliderContainer.appendChild(valueDisplay)
+            optionsContainer.appendChild(sliderContainer)
+            
+            // Add scale labels
+            const scaleLabels = document.createElement("div")
+            scaleLabels.className = "scale-labels"
+            
+            const minLabel = document.createElement("span")
+            minLabel.textContent = "1 (Very Low)"
+            
+            const maxLabel = document.createElement("span")
+            maxLabel.textContent = `${question.scale} (Very High)`
+            
+            scaleLabels.appendChild(minLabel)
+            scaleLabels.appendChild(maxLabel)
+            optionsContainer.appendChild(scaleLabels)
+        } else {
+            // Regular multiple choice question
+            Object.entries(question.choices).forEach(([key, value]) => {
+                const button = document.createElement("button")
+                button.textContent = `${key}: ${value[0]}`
+                button.classList.add("option-button");
+                button.onclick = () => {
+                    // Store the selected answer temporarily (don't push to array yet)
+                    this.currentSelectedAnswer = value[1]
+                    console.log("Selected:", this.currentSelectedAnswer)
+                    nextBtn.disabled = false;
+                }
+                optionsContainer.appendChild(button);
+            }) 
+        }
 
         nextBtn.disabled = true
         nextBtn.onclick = () => {
-                // Only push to userAnswers if an answer was selected
+            // Only push to userAnswers if an answer was selected
             if (this.currentSelectedAnswer !== null) {
                 this.userAnswers.push(this.currentSelectedAnswer)
                 console.log("Submitted answers:", this.userAnswers)
@@ -434,7 +310,6 @@ class UbuntexIndex {
         resultContainer.style.display = "block"
         resultContainer.innerHTML = `<h2>Your Ubuntex Score: ${score.toFixed(2)}%</h2><p>Classification: ${classification}</p><p class="storage-notice">Note: This result is saved in your browser. To retake, clear your browser data or use a different browser.</p>`
     } 
-    
 }
 
 const quiz = new UbuntexIndex()

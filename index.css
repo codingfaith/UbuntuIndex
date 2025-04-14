@@ -96,3 +96,27 @@ button {
     margin-top: 20px;
     font-size: 0.9em;
 }
+.slider-container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.scale-slider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.slider-value {
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scale-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+}
