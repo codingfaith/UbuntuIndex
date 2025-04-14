@@ -42,15 +42,15 @@ class UbuntexIndex {
                 D: ["Working with others is the only way of achieving lasting results ", 7]
             }},{
             //ratings
-            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your family?", //6
-            scale: 10},{
-            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand yourself?", //7
+            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand yourself?", //6
+            scale: 5},{
+            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand others in the world?", //7
             scale: 5},{
             text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your community?", //8
             scale: 10},{
-            text: "On a 5 point scale where 1 means very low and 5 means very high, how would you rate your ability to understand others in the world?", //9
-            scale: 5},{
-            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your country?", //10
+            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your country?", //9
+            scale: 10},{
+            text: "On a 10 point scale where 1 means very low and 10 means very high, how would you rate your ability to understand others in your family?", //10
             scale: 10},{
             // respect (25%)
             text: "How important is showing respect to  other human beings?", //11
@@ -72,14 +72,14 @@ class UbuntexIndex {
             }},{
             text: "Rate on a 5 point scale your respect for yourself", //14
             scale: 5},{
-            text: "Rate on a 10 point scale your respect for your community", //15
-            scale: 10},{
-            text: "Rate on a 5 point scale your respect for your family members in general", //16
+            text: "Rate on a 5 point scale your respect for your family members in general", //15
             scale: 5},{
-            text: "Rate on a 10 point scale your respect for the people in your country", //17
-            scale: 10},{
-            text: "Rate on a 5 point scale your respect for people around the world", //18
+            text: "Rate on a 5 point scale your respect for people around the world", //16
             scale: 5},{
+            text: "Rate on a 10 point scale your respect for your community", //17
+            scale: 10},{
+            text: "Rate on a 10 point scale your respect for the people in your country", //18
+            scale: 10},{
             text: "Rate on a 10 point scale your respect authorities in general", //19
             scale: 10},{
             // Dignity (20%)
