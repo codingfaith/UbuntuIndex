@@ -45,6 +45,7 @@ button {
     box-shadow: 1px 1px 3px 1px #808080;
 }
 .option-button {
+    color: #000000;
     text-align: left;
     background: rgba(25,25,122,0.2);
 }
@@ -80,4 +81,10 @@ button {
 #next-btn:disabled {
     color: #808080;
     cursor: not-allowed;
+}
+.storage-notice {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    font-size: 0.9em;
 }

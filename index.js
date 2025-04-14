@@ -314,9 +314,32 @@ class UbuntexIndex {
             }}
             
         ]
-        
         this.currentIndex = 0
         this.userAnswers = []
+        this.checkTestCompletion();
+    }
+
+    checkTestCompletion() {
+        const testCompleted = localStorage.getItem('ubuntexTestCompleted');
+        if (testCompleted === 'true') {
+            this.showCompletionMessage();
+            return;
+        }
+        
+        // Start the quiz if not completed before
+        this.startQuiz();
+    }
+
+    showCompletionMessage() {
+        document.getElementById("quiz-container").style.display = "none";
+        const resultContainer = document.getElementById("result");
+        resultContainer.style.display = "block";
+        resultContainer.innerHTML = `
+            <h2>Test Already Completed</h2>
+            <p>You have already completed this test on this device.</p>
+            <p>To maintain the accuracy of results, please take the test only once.</p>
+            <p>If you need to retake, please clear your browser data or use a different browser.</p>
+        `;
     }
 
     startQuiz() {
@@ -384,8 +407,9 @@ class UbuntexIndex {
     calculateScore() {
         const totalScore = this.userAnswers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
         const maxPossibleScore = 240
-        const finalScore = (totalScore  / maxPossibleScore) * 100
-        
+        const finalScore = (totalScore  / maxPossibleScore) * 100  
+        localStorage.setItem('ubuntexTestCompleted', 'true') // Mark test as completed in localStorage
+
         this.displayResults(finalScore)
     }
 
@@ -401,8 +425,9 @@ class UbuntexIndex {
         document.getElementById("quiz-container").style.display = "none"
         const resultContainer = document.getElementById("result")
         resultContainer.style.display = "block"
-        resultContainer.innerHTML = `<h2>Your Ubuntex Score: ${score.toFixed(2)}</h2><p>Classification: ${classification}</p>`
-    }
+        resultContainer.innerHTML = `<h2>Your Ubuntex Score: ${score.toFixed(2)}%</h2><p>Classification: ${classification}</p><p class="storage-notice">Note: This result is saved in your browser. To retake, clear your browser data or use a different browser.</p>`
+    } 
+    
 }
 
 const quiz = new UbuntexIndex()
