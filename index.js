@@ -375,6 +375,13 @@ class UbuntexIndex {
             }
             optionsContainer.appendChild(button);
         }) 
+        // JavaScript fallback for iOS
+        document.querySelectorAll('.option-button').forEach(button => {
+            button.addEventListener('touchstart', function() {
+              this.focus()
+            })
+          })
+
         nextBtn.disabled = true
         nextBtn.onclick = () => {
                 // Only push to userAnswers if an answer was selected
