@@ -35,7 +35,8 @@ button {
 .option-button:focus {
     color: #ffffff;
     font-size: larger;
-    background: rgb(54, 69, 79);
+    background: rgb(54, 69, 79)!important;
+    -webkit-tap-highlight-color: transparent;
 }
 #result,
 #quiz-container {
