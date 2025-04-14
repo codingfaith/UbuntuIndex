@@ -33,8 +33,8 @@ button {
     background: rgb(128, 128, 128,0.2);
 }
 .option-button:focus {
-    color: #ffffff!important;
-    font-size: larger!important;
+    color: #ffffff;
+    font-size: larger;
     background: #36454F!important;
     -webkit-tap-highlight-color: transparent;
 }
