@@ -33,9 +33,9 @@ button {
     background: rgb(128, 128, 128,0.2);
 }
 .option-button:focus {
-    color: #ffffff;
-    font-size: larger;
-    background: rgb(54, 69, 79)!important;
+    color: #ffffff!important;
+    font-size: larger!important;
+    background: #36454F!important;
     -webkit-tap-highlight-color: transparent;
 }
 #result,
