@@ -176,7 +176,7 @@ class UbuntexIndex {
         resultContainer.style.display = "block";
         resultContainer.innerHTML = `
             <h2>Test Already Completed</h2>
-            <p>You have already completed this test on this device.</p>`;
+            <p>You have already completed the test on this device.</p>`;
     }
 
     startQuiz() {
@@ -305,7 +305,7 @@ class UbuntexIndex {
         document.getElementById("quiz-container").style.display = "none"
         const resultContainer = document.getElementById("result")
         resultContainer.style.display = "block"
-        resultContainer.innerHTML = `<h2>Your Ubuntex Score: ${score.toFixed(2)}%</h2><p>Classification: ${classification}</p><p class="storage-notice">Note: This result is saved in your browser. To retake, clear your browser data or use a different browser.</p>`
+        resultContainer.innerHTML = `<h2>Your Ubuntex Score: ${score.toFixed(2)}%</h2><p>Classification: ${classification}</p><p class="storage-notice">Thank you for you participation!</p>`
     } 
 }
 
